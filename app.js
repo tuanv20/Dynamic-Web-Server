@@ -13,17 +13,21 @@ let sendHello = function(res){
 
 const app = express();
 const port = 8080;
-//Specifies folder with static content that server needs to serve (css, images, static files, etc)
+//Tells server to serve static files necessary for site content (css, images, static files)
 const static_path = path.join(__dirname, "public");
+//Tells server to serve files needed for react build
+const react_path = path.join(__dirname, "/homepage/build");
 app.use(express.static(static_path));
+app.use(express.static(react_path));
 
 //Endpoints 
 app.get("/content/resume.html", (req, res) =>{
     res.send("This is a resume");
 })
 
-app.get("/content/homepage.html", (req, res) =>{
-    res.sendFile("/content/homepage.html");
+app.get("/content/homepage", (req, res) =>{
+    console.log("test")
+    res.sendFile(path.join(__dirname, "homepage/build/index.html"));
 })
 
 //Starts up the server
