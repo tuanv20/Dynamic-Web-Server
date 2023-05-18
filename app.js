@@ -4,13 +4,6 @@ const path = require('path');
 const fs = require('fs');
 const express = require("express");
 
-let sendHello = function(res){
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/html');
-    res.write("Hello World");
-    res.end();
-}
-
 const app = express();
 const port = 8080;
 //Tells server to serve static files necessary for site content (css, images, static files)
@@ -21,12 +14,11 @@ app.use(express.static(static_path));
 app.use(express.static(react_path));
 
 //Endpoints 
-app.get("/content/resume.html", (req, res) =>{
-    res.send("This is a resume");
+app.get("/content/resume", (req, res) =>{
+    res.sendFile(path.join(__dirname, "public/content/resume.html"));
 })
 
 app.get("/content/homepage", (req, res) =>{
-    console.log("test")
     res.sendFile(path.join(__dirname, "homepage/build/index.html"));
 })
 

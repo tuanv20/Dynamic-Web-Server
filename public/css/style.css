@@ -119,6 +119,27 @@ html {
       position:relative;
       top:0.0357vw;
   }
+
+  .backButtonBox {
+    justify-content: left;
+    align-content: left;
+  }
+
+  .backButton {
+    border-radius: 1vw;
+    border: 0.15vw solid #e69708;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.715vw;
+    padding: 0.571vw 1.107vw;
+    text-decoration: none;
+    margin: 1.69em auto;
+    caret-color: transparent;
+  }
+
+  .backButton:hover {
+    background-color:#e69708;
+}
   
   .resume-div{
     padding: 10% 10% 10% 10%;

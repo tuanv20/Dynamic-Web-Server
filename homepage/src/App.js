@@ -1,18 +1,11 @@
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'reactstrap';
+import Navbar from './Navbar';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Welcome to my Website.
-        </p>
-        <Button 
-        color = 'light'
-        href = 'resume'
-        >My Resume</Button>
-      </header>
+        <Navbar />
+        <p color="black">Welcome to my Website!</p>
     </div>
   );
 }
