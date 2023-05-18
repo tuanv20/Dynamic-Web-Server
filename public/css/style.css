@@ -1,0 +1,258 @@
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+  }
+  header, footer {
+    background-color: #fec89a;
+    text-align: left;
+  }
+  header {
+    font-family: Montserrat Alternates;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+  }
+  
+  h1 {
+    font-family: Lora;
+    font-size: 2vw;
+    padding-bottom: .67em;
+    border-bottom: 0.0357vw solid;
+    line-height: 1.3;
+  }
+  
+  .bio {
+    color: #ffffff;
+    font-size: 1vw;
+    font-family: 'Montserrat Alternates';
+  }
+  
+  .nameheader{
+    color: #23395D;
+    font-size: 3vw;
+    font-family: Lora;
+    font-weight: bold;
+  }
+  
+  .namesubheader {
+    color: #77C3EC;
+    font-size: 1.5vw;
+    font-family: Lora;
+    font-weight:bold;
+  }
+  
+  .contentTitle {
+    color: black;
+    font-size: 1.5vw; 
+    font-family:Lora;
+    margin-top: 2.5%;
+    font-weight: bold;
+  }
+  
+  .contentText {
+    color: black;
+    font-family: Lora;
+    font-size: 1.4vw;
+  }
+  
+  .projectTitle {
+    color: black;
+    font-size: 1.5vw;
+    font-weight: bold;
+  }
+  
+  .socialsText{
+    display: inline;
+    position: relative;
+    color: black;
+    font-size: 1vw;
+    font-family: Lora; 
+    top: -0.429vw;
+    margin-right: 0.52vw;
+  }
+  
+  .resumecontentheader{
+    display: inline;
+    position: relative;
+    color: #23395D;
+    font-size: 2vw;
+    font-family: Lora;
+    border-bottom: 0.0714vw solid;
+    line-height: 1.3;
+    margin-right: 5%;
+    border-width: 0.5vw;
+    font-weight: bold;
+  }
+  
+  .wrapper {
+      max-width: 41vw;
+      margin: auto;
+      padding: 2.1vw;
+      display: block;
+  }
+  
+  .buttonBox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .myButton {
+    border-radius: 1vw;
+    border: 0.0357vw solid #ffffff;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 0.715vw;
+    padding: 0.571vw 1.107vw;
+    text-decoration: none;
+    margin: 1.69em auto;
+    caret-color: transparent;
+  }
+  
+  .myButton:hover {
+      background-color:#e69708;
+  }
+  
+  .myButton:active {
+      position:relative;
+      top:0.0357vw;
+  }
+  
+  .resume-div{
+    padding: 10% 10% 10% 10%;
+    background: #EEE5E5;
+    height: 100%;
+    width: 100%;
+    caret-color: transparent;
+  }
+  
+  .resumeheader-div{
+    flex-direction: column;
+    height: 10%;
+    width: 50%;
+    margin-bottom: 3%;
+  }
+  
+  .resumecontent-div{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .resumecontent{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    width: 45%;
+    height: 100%;
+  }
+  
+  .resumecontentborder{
+    width: 100%;
+    margin-right: 5%;
+    border-bottom: 0.0714vw dotted;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .resumecontentblock{
+    width: 100%;
+    height: 2vw;
+  }
+  
+  .resumeskillsdiv{
+    margin-top: 0.8vw;
+    height: 4vw;
+    width: 100%;
+  }
+  
+  .skill{
+    display: inline-block;
+    border-style: solid;
+    padding: 0.4vw;
+    border-color:#77C3EC;
+    border-width:thin;
+    border-radius: 0.4vw;
+    font-size: 1.1vw;
+    color: #414141;
+    height: 1.9vw;
+    margin-right: 0.4vw;
+    margin-top: 0.4vw;
+    line-height: 1.9vw;
+    font-weight: bold;
+    font-weight: bold;
+  }
+  
+  .skill:hover{
+    background-color: #77C3EC;
+    cursor:pointer;
+  }
+  
+  .resumesidebar{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+  }
+  
+  .socialheader{
+    flex-direction: row;
+    height: 1.3vw;
+    width: 100%;
+  }
+  
+  img{
+    display: inline;
+    width: 1.4vw;
+    height: 100%;
+    border-radius: 50%;
+    border: 0.11vw solid #D8E2DC;
+    margin-right: 0.5vw;
+  }
+  
+  .circleEmpty{
+    height: 1.25vw;
+    width: 1.25vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.35vw;
+  }
+  
+  .circleFilled{
+    height: 1.25vw;
+    width: 1.25vw;
+    background-color: #23395D;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.35vw;
+  }
+  
+  .languagesection{
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    width: 33%;
+  }
+  
+  .languagesdiv{
+    display: flex;
+    flex-direction: row;
+    height: 7.143vw;
+    width: 100%;
+  }
+  
+  .ratingbar{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    margin-bottom: 15%;
+    margin-top: 2.5%;
+  }
+  
+  .container {
+    margin: auto;
+  }
+  
+  
