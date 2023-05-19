@@ -27,6 +27,7 @@ html {
     color: #ffffff;
     font-size: 1vw;
     font-family: 'Montserrat Alternates';
+    font-weight: bold;
   }
   
   .nameheader{
@@ -109,6 +110,7 @@ html {
     text-decoration: none;
     margin: 1.69em auto;
     caret-color: transparent;
+    font-weight: bold;
   }
   
   .myButton:hover {
