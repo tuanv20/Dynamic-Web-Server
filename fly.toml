@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for dynamicwebserver on 2023-05-18T14:18:51-04:00
+# fly.toml app configuration file generated for tuanv20 on 2023-05-18T15:56:44-04:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "dynamicwebserver"
+app = "tuanv20"
 primary_region = "iad"
 
 [http_service]
