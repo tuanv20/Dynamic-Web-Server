@@ -6,8 +6,9 @@ import {
     Dropdown,
     DropdownItem,
     DropdownToggle,
-    DropdownMenu
+    DropdownMenu,
 } from 'reactstrap';
+import { Link } from "react-router-dom";
 export default function Navbar(){
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const toggle = () => setDropdownOpen(!dropdownOpen);
@@ -28,11 +29,11 @@ export default function Navbar(){
           Projects
         </DropdownToggle>
         <DropdownMenu>
-          <DropdownItem header>TodoList</DropdownItem>
+          <DropdownItem href={"http://localhost:3000"}>TodoList</DropdownItem>
           <DropdownItem divider />
-          <DropdownItem header>Project 2</DropdownItem>
+          <DropdownItem>Project 2</DropdownItem>
           <DropdownItem divider />
-          <DropdownItem header>Project 3</DropdownItem>
+          <DropdownItem>Project 3</DropdownItem>
         </DropdownMenu>
       </Dropdown>
       <NavItem>
