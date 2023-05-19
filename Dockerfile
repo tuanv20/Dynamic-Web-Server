@@ -1,6 +1,7 @@
 FROM node:18
 WORKDIR /usr/src/app
-COPY Server/package*.json ./
+COPY package*.json ./
 RUN npm install
+COPY . . 
 CMD ["node", "app.js"]
 
